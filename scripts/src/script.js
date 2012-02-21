@@ -13,11 +13,15 @@ function main() {
 
     var object_array = [];
 
+    query = "UNC Asheville";
+
+
+
 
     //Creates a spotter and gets it to insert tweets into the DOM
 
     var s = new Spotter("twitter.search",
-    			{q:"#search_term", period:120},
+    			{q:query, period:120},
 			{buffer:true, bufferTimeout:750}
 			);
 
