@@ -6,6 +6,13 @@
 	<!--- styles --->
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 
+	<!--- libraries --->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="scripts/lib/spotter.js"></script>
+
+	<!--- program --->
+	<script src="scripts/src/script.js"></script>
+
 <h1 ALIGN="CENTER">TwitterSearcher.com</h1>
 <h4 ALIGN="CENTER">where you can track tweets that mention anything you like.</h4>
 </head>
@@ -13,14 +20,15 @@
 <br>
 <br>
 
-<div id = content>
-<form class = searchbox>
+<form class = "searchbox">
+<div id = "content">
 Type a search term here: 
-<input id = querybox type= text />
-<input id = searchbutton type = submit value = 'Search' />
-</form>
-<div id = tweets></div>
+<input id = "querybox" type= "text" />
+<input id = "searchbutton" type = "submit" value = "Search" />
+<div id = "tweets"></div>
 </div>
+</form>
 <br>
 <br>
+</body>
 </html>
