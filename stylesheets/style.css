@@ -2,6 +2,6 @@ body {
 	background: tan;
 }
 
-#twitSearch {
-	align= center
-}
+#content {
+	position: absolute;
+	}

@@ -13,7 +13,7 @@ function main() {
 
     var object_array = [];
 
-    query = "UNC Asheville";
+    var query = $("#querybox").val();
 
 
 
@@ -44,7 +44,8 @@ function main() {
 
 	var object = $("<p class='"+color+"'>"+profile_image+tweet.text+"</p>");
 	object.hide();
-	$("#tweets").prepend(object);
+	$("#content").prepend(object);
+	object.fadeIn();
 	object.slideDown();
 
 	}
@@ -63,7 +64,7 @@ function main() {
 
 
 	
-}
+
 
 $(document).ready(function() {
 
