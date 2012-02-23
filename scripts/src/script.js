@@ -12,7 +12,7 @@ function main() {
     var count = 0;
     var object_array = [];
     var query = $("#querybox").val();
-    alert(query);
+    
 
     //Creates a spotter and gets it to insert tweets into the DOM
     
@@ -24,11 +24,15 @@ function main() {
     	s.register(function(tweet) {
 		//Adds profile images (tweet.profile_image_url)
 
-		count = count + 1;
-		var color;
+		
 		var profile_image = "<img src='"+tweet.profile_image_url+"' />";
 
-		if (count%2 === 0) {
+		
+		//changes color of the tweet based on length of the search term
+
+		var letter_count = $("#querybox").val().length;
+
+		if (letter_count < 5) {
 			color = "red";
 		} else {
 			color = "blue";
