@@ -38,6 +38,12 @@ function main() {
 			color = "blue";
 		}
 
+		//if tweet.text contains the word love, then alert with a special message from the Beatles
+
+		var tweet_text = tweet.text;
+		if (tweet_text.indexOf("love")!=1)
+		alert ("All you need is love!- The Beatles")
+
 		var object = $("<p class='"+color+"'>"+profile_image+tweet.text+"</p>");
 		object.hide();
 		$("#tweets").prepend(object);
